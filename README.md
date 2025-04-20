@@ -106,7 +106,6 @@ Sleuth Kit Disk Analysis Commands
   ●	Command:  icat.exe -f filetype “file path” <inode number>
   
   ![image](https://github.com/user-attachments/assets/5cf65056-bff0-4ecc-b566-a7b8910187b2)
-  
   ![image](https://github.com/user-attachments/assets/fda1fc66-6673-43e5-9ece-e0bdb735ea34)
 
   #### OUTPUT SUMMARY:
@@ -124,33 +123,43 @@ Sleuth Kit Disk Analysis Commands
   
   ●	Security note: The annotation warns that this VM is intentionally vulnerable and should not be exposed to untrusted networks.
 
-
-
-
-
-5. View File System Details Using fsstat
-●	Use fsstat to view file system metadata of the ISO image.
-
-●	Command:  fsstat -f filetype “file path”
-
-
-OUTPUT SUMMARY:
- PRIMARY VOLUME DESCRIPTOR 1
- File System Information:
-•	File System Type: ISO9660
-•	Volume Name: 14_04_2025
-•	Volume Set Size: 1
-•	Volume Set Sequence: 1
-•	Recording Application: AnyBurn
-   Metadata Information:
-•	Path Table Location: 22–22
-•	Inode Range: 0 – 9
-•	Root Directory Block: 36827386058113052
-    Content Information:
-•	Sector Size: 2048 bytes
-•	Block Size: 2048 bytes
-•	Total Sector Range: 0 – 940393
-•	Total Block Range: 0 – 940393
+### 5. View File System Details Using fsstat
+  ●	Use fsstat to view file system metadata of the ISO image.
+  
+  ●	Command:  fsstat -f filetype “file path”
+  ![image](https://github.com/user-attachments/assets/a6065f77-74fa-4507-bd57-85459da5f388)
+  ![image](https://github.com/user-attachments/assets/e93f8c16-c8fd-4e34-8bb2-617a76d9261f)
+  
+  #### OUTPUT SUMMARY:
+  PRIMARY VOLUME DESCRIPTOR 1 File System Information:
+  
+  •	File System Type: ISO9660
+  
+  •	Volume Name: 14_04_2025
+  
+  •	Volume Set Size: 1
+  
+  •	Volume Set Sequence: 1
+  
+  •	Recording Application: AnyBurn
+  
+  Metadata Information:
+  
+  •	Path Table Location: 22–22
+  
+  •	Inode Range: 0 – 9
+  
+  •	Root Directory Block: 36827386058113052
+  
+  Content Information:
+  
+  •	Sector Size: 2048 bytes
+  
+  •	Block Size: 2048 bytes
+  
+  •	Total Sector Range: 0 – 940393
+  
+  •	Total Block Range: 0 – 940393
 
 6.List Directory Structure
 
