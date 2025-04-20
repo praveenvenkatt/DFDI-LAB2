@@ -45,14 +45,19 @@ Sleuth Kit Disk Analysis Commands
 
 ### 1. View File Metadata
   ●	Use istat to view metadata of a file/directory using its inode number 0:
+  
   ●	Command:  istat.exe -f filetype “file path” <inode number>
+  
   ![image](https://github.com/user-attachments/assets/39128d45-4178-478e-857b-d6ad4a927c59)
 
 
    OUTPUT SUMMARY:
         ●	Type: Directory
+        
         ●	Permissions: dr-xr-xr-x (read + execute for all)
+        
         ●	Created On: 2025-04-14 12:43:12 IST
+        
         ●	Size: 2048 bytes, Sectors Used: 31
 2. View Metadata of Inode 1
 ●	Use istat to view metadata of a file/directory using its inode number 1:
