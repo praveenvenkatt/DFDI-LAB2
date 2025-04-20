@@ -161,38 +161,47 @@ Sleuth Kit Disk Analysis Commands
   
   •	Total Block Range: 0 – 940393
 
-6.List Directory Structure
+### 6.List Directory Structure
 
-●	Use fls to view directory structure.
-
-●	Command:  fls -f filetype -r  “file path”
-
-OUTPUT SUMMARY:
-•	Root Directory: metasploitable-linux-2.0.0 (Inode 1)
-•	Contained Files and Subdirectories:
-o	Metasploitable2-Linux/ — A directory (Inode 2)
-o	Metasploitable.nvram — NVRAM file storing BIOS settings (Inode 3)
-o	Metasploitable.vmdk — Virtual hard disk file (Inode 4)
-o	Metasploitable.vmsd — Snapshot metadata file (Inode 5)
-o	Metasploitable.vmx — Main configuration file (Inode 6)
-o	Metasploitable.vmxf — Extended configuration file (Inode 7)
-
-•	Special Entries:
-o	$OrphanFiles — Virtual directory for orphaned files (Inode 9)
-o	OrphanFile-8 — An orphan file detected (Inode 8)
-
-6. Image File Information
-
-●	Use img_stat – Sleuth Kit utility for viewing image file metadata.
-
-●	Command:  img_stat  “file path”
+  ●	Use fls to view directory structure.
+  
+  ●	Command:  fls -f filetype -r  “file path”
+  ![image](https://github.com/user-attachments/assets/4eec2350-f448-4655-ba1f-da3ef3cb0e68)
 
 
-OUTPUT SUMMARY:
-•	Image Type: raw
-•	Size in Bytes: 1925926912 (approx. 1.79 GB)
-•	Sector Size: 512 bytes
-•	Confirms that the input image is a raw format disk image with standard sector configuration.
+  #### OUTPUT SUMMARY:
+  
+  •	Root Directory: metasploitable-linux-2.0.0 (Inode 1)
+  
+  •	Contained Files and Subdirectories:
+  
+  o	Metasploitable2-Linux/ — A directory (Inode 2)
+  
+  o	Metasploitable.nvram — NVRAM file storing BIOS settings (Inode 3)
+  
+  o	Metasploitable.vmdk — Virtual hard disk file (Inode 4)
+  
+  o	Metasploitable.vmsd — Snapshot metadata file (Inode 5)
+  
+  o	Metasploitable.vmx — Main configuration file (Inode 6)
+  
+  o	Metasploitable.vmxf — Extended configuration file (Inode 7)
+
+### 7. Image File Information
+
+  ●	Use img_stat – Sleuth Kit utility for viewing image file metadata.
+  
+  ●	Command:  img_stat  “file path”
+  ![image](https://github.com/user-attachments/assets/2877e39b-a09e-4361-a7fc-b6c03fce6346)
+
+  #### OUTPUT SUMMARY:
+  •	Image Type: raw
+  
+  •	Size in Bytes: 1925926912 (approx. 1.79 GB)
+  
+  •	Sector Size: 512 bytes
+  
+  •	Confirms that the input image is a raw format disk image with standard sector configuration.
 
 
 ## OUTPUT:
