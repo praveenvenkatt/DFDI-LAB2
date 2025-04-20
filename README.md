@@ -204,5 +204,6 @@ Sleuth Kit Disk Analysis Commands
   •	Confirms that the input image is a raw format disk image with standard sector configuration.
 
 
-## OUTPUT:
-Disk Structure Analysis Results
+## RESULT:
+Using The Sleuth Kit, the disk structure was successfully analyzed. 
+
