@@ -51,52 +51,72 @@ Sleuth Kit Disk Analysis Commands
   ![image](https://github.com/user-attachments/assets/39128d45-4178-478e-857b-d6ad4a927c59)
   #### OUTPUT SUMMARY:
   ●	Type: Directory
+  
   ●	Permissions: dr-xr-xr-x (read + execute for all)
+  
   ●	Created On: 2025-04-14 12:43:12 IST
+  
   ●	Size: 2048 bytes, Sectors Used: 31
 
   
-2. View Metadata of Inode 1
-●	Use istat to view metadata of a file/directory using its inode number 1:
-●	Command:  istat.exe -f filetype “file path” <inode number>
+### 2. View Metadata of Inode 1
 
-   OUTPUT SUMMARY:
-●	Type: Directory (metasploitable-linux-2.0.0)
-●	Permissions: dr-xr-xr-x (read + execute for all)
-●	Created On: 2 2025-03-11 19:34:00 IST
-●	Size: 2048 bytes, Sectors Used: 32
-3. View Metadata of Inode 6
-●	Use istat to view metadata of a file/directory using its inode number 6:
-●	Command:  istat.exe -f filetype “file path” <inode number>
+  ●	Use istat to view metadata of a file/directory using its inode number 1:
+  
+  ●	Command:  istat.exe -f filetype “file path” <inode number>
+  ![image](https://github.com/user-attachments/assets/93b77dd5-021d-404d-b6d8-4e04f4599022)
 
+  #### OUTPUT SUMMARY:
+  
+  ●	Type: Directory (metasploitable-linux-2.0.0)
+  
+  ●	Permissions: dr-xr-xr-x (read + execute for all)
+  
+  ●	Created On: 2 2025-03-11 19:34:00 IST
+  
+  ●	Size: 2048 bytes, Sectors Used: 32
+  
+### 3. View Metadata of Inode 6
 
-   OUTPUT SUMMARY:
-●	File Name: Metasploitable.vmx — This is a VMware configuration.
-●	Type: File — It's a regular file, not a folder.
-●	Permissions: -r-xr-xr-x — Read & execute allowed for everyone, no write access.
-●	Created Time: 2025-03-11 19:34:16 IST — This is when the file was added to the ISO.
-●	Size: 2804 bytes — Small file (just a few KB).
-●	Sectors: 940391, 940392 — The disk sectors storing this file's content.
+  ●	Use istat to view metadata of a file/directory using its inode number 6:
+  
+  ●	Command:  istat.exe -f filetype “file path” <inode number>
+  ![image](https://github.com/user-attachments/assets/ad0a968c-7359-4e75-90c0-1df182c3fad8)
 
-4. Analysis of Inode 6 Metadata via icat Utility
+  #### OUTPUT SUMMARY:
+  
+  ●	File Name: Metasploitable.vmx — This is a VMware configuration.
+  
+  ●	Type: File — It's a regular file, not a folder.
+  
+  ●	Permissions: -r-xr-xr-x — Read & execute allowed for everyone, no write access.
+  
+  ●	Created Time: 2025-03-11 19:34:16 IST — This is when the file was added to the ISO.
+  
+  ●	Size: 2804 bytes — Small file (just a few KB).
+  
+  ●	Sectors: 940391, 940392 — The disk sectors storing this file's content.
 
-●	Use icat to extract file content using its inode number 6:
+### 4. Analysis of Inode 6 Metadata via icat Utility
 
-●	Command:  icat.exe -f filetype “file path” <inode number>
+  ●	Use icat to extract file content using its inode number 6:
+  
+  ●	Command:  icat.exe -f filetype “file path” <inode number>
+  ![image](https://github.com/user-attachments/assets/5cf65056-bff0-4ecc-b566-a7b8910187b2)
+  ![image](https://github.com/user-attachments/assets/fda1fc66-6673-43e5-9ece-e0bdb735ea34)
 
-
-
-
-
-
-OUTPUT SUMMARY:
-The command retrieves the contents of a VMware virtual machine configuration                      file (Metasploitable.vmx). This file defines how the virtual machine is set up,   including:
-●	Hardware settings like CPU (numvcpus = "1"), RAM (memsize = "512"), and SCSI controller.
-●	Networking options, with both NAT (ethernet0) and Host-only (ethernet1) adapters configured.
-●	Storage devices, such as virtual hard disk (Metasploitable.vmdk) and CD-ROM (auto detect).
-●	Additional devices like USB, EHCI, and multiple PCI bridges.
-●	VM metadata, including UUID, display name (Metasploitable2-Linux), OS type (ubuntu), and annotations.
-●	Security note: The annotation warns that this VM is intentionally vulnerable and should not be exposed to untrusted networks.
+  #### OUTPUT SUMMARY:
+  The command retrieves the contents of a VMware virtual machine configuration                      file (Metasploitable.vmx). This file defines how the virtual machine is set up,   including:
+  ●	Hardware settings like CPU (numvcpus = "1"), RAM (memsize = "512"), and SCSI controller.
+  
+  ●	Networking options, with both NAT (ethernet0) and Host-only (ethernet1) adapters configured.
+  
+  ●	Storage devices, such as virtual hard disk (Metasploitable.vmdk) and CD-ROM (auto detect).
+  
+  ●	Additional devices like USB, EHCI, and multiple PCI bridges.
+  
+  ●	VM metadata, including UUID, display name (Metasploitable2-Linux), OS type (ubuntu), and annotations.
+  ●	Security note: The annotation warns that this VM is intentionally vulnerable and should not be exposed to untrusted networks.
 
 
 
