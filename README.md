@@ -51,11 +51,8 @@ Sleuth Kit Disk Analysis Commands
   ![image](https://github.com/user-attachments/assets/39128d45-4178-478e-857b-d6ad4a927c59)
   #### OUTPUT SUMMARY:
   ●	Type: Directory
-  
   ●	Permissions: dr-xr-xr-x (read + execute for all)
-  
   ●	Created On: 2025-04-14 12:43:12 IST
-  
   ●	Size: 2048 bytes, Sectors Used: 31
 
   
