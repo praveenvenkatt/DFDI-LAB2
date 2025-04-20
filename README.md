@@ -64,6 +64,7 @@ Sleuth Kit Disk Analysis Commands
   ●	Use istat to view metadata of a file/directory using its inode number 1:
   
   ●	Command:  istat.exe -f filetype “file path” <inode number>
+  
   ![image](https://github.com/user-attachments/assets/93b77dd5-021d-404d-b6d8-4e04f4599022)
 
   #### OUTPUT SUMMARY:
@@ -81,6 +82,7 @@ Sleuth Kit Disk Analysis Commands
   ●	Use istat to view metadata of a file/directory using its inode number 6:
   
   ●	Command:  istat.exe -f filetype “file path” <inode number>
+  
   ![image](https://github.com/user-attachments/assets/ad0a968c-7359-4e75-90c0-1df182c3fad8)
 
   #### OUTPUT SUMMARY:
@@ -102,11 +104,14 @@ Sleuth Kit Disk Analysis Commands
   ●	Use icat to extract file content using its inode number 6:
   
   ●	Command:  icat.exe -f filetype “file path” <inode number>
+  
   ![image](https://github.com/user-attachments/assets/5cf65056-bff0-4ecc-b566-a7b8910187b2)
+  
   ![image](https://github.com/user-attachments/assets/fda1fc66-6673-43e5-9ece-e0bdb735ea34)
 
   #### OUTPUT SUMMARY:
-  The command retrieves the contents of a VMware virtual machine configuration                      file (Metasploitable.vmx). This file defines how the virtual machine is set up,   including:
+  The command retrieves the contents of a VMware virtual machine configuration file (Metasploitable.vmx). This file defines how the virtual machine is set up, including:
+  
   ●	Hardware settings like CPU (numvcpus = "1"), RAM (memsize = "512"), and SCSI controller.
   
   ●	Networking options, with both NAT (ethernet0) and Host-only (ethernet1) adapters configured.
@@ -116,6 +121,7 @@ Sleuth Kit Disk Analysis Commands
   ●	Additional devices like USB, EHCI, and multiple PCI bridges.
   
   ●	VM metadata, including UUID, display name (Metasploitable2-Linux), OS type (ubuntu), and annotations.
+  
   ●	Security note: The annotation warns that this VM is intentionally vulnerable and should not be exposed to untrusted networks.
 
 
