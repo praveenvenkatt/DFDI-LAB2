@@ -4,7 +4,7 @@
 To analyze the internal disk structure of a disk image using Sleuth Kit tools and identify file system metadata, directory structure, and other forensic details for digital investigation purposes.
 
 ## EQUIPMENT REQUIRED:
-●	Hardware: Personal Computer (PC)
+  ●	Hardware: Personal Computer (PC)
 
 ```
 Register Number: 212222040121
@@ -13,6 +13,7 @@ Name: Praveen V
 
 ## DESIGN STEPS:
 ### Step 1:
+
 Obtain or create a disk image file (e.g., praveendisk.iso) to analyze. 
 
 ### Step 2:
@@ -25,14 +26,17 @@ Interpret the output of the tools to understand the disk structure, including pa
 Sleuth Kit Disk Analysis Commands
 ## PRELIMINARY STEP:
 ### Step1:
+
   ●	Run command prompt as administrator
   ![image](https://github.com/user-attachments/assets/c6e03690-2da1-453d-96c4-30dc60274c1d)
 
 ### Step2:
+
   ●	Verify Sleuthkit is installed.
   ![image](https://github.com/user-attachments/assets/504edd66-9700-490f-b6c5-878d5ccba681)
 
-Step3:
+### Step3:
+
   ●	Navigate to the binary file of Sleuthkit in command prompt: 
   ![image](https://github.com/user-attachments/assets/5e792732-51f0-4b7f-b299-cc21699104e8)
 
